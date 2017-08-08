@@ -1,10 +1,11 @@
-baseurl = "https://kamsonka.github.io/blog/"
+baseurl = "/blog/"
 languageCode = "en-us"
 title = "A Hugo website"
 theme = "hugo-lithium-theme"
 googleAnalytics = ""
 disqusShortname = ""
 ignoreFiles = ["\\.Rmd$", "_files$", "_cache$"]
+relativeurls = true
 
 [permalinks]
     post = "/:year/:month/:day/:slug/"
