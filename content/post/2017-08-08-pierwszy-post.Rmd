@@ -3,6 +3,7 @@ title: pierwszy post
 author: KW
 date: '2017-08-08'
 slug: pierwszy-post
+base.url: /blog/
 categories:
   - R
 tags:

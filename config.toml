@@ -1,7 +1,7 @@
-baseurl = "/"
+baseurl = "https://kamsonka.github.io/blog/"
 languageCode = "en-us"
 title = "A Hugo website"
-theme = "ghostwriter"
+theme = "hugo-lithium-theme"
 googleAnalytics = ""
 disqusShortname = ""
 ignoreFiles = ["\\.Rmd$", "_files$", "_cache$"]
