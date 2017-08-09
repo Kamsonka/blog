@@ -1,10 +1,11 @@
-baseurl = "/blog/" # Make sure to end baseurl with a '/'
+baseurl = "/" # Make sure to end baseurl with a '/'
 title = "Your site title"
 author = "Your name"
 # Shown in the side menu
 copyright = "&copy; 2016. All rights reserved."
 canonifyurls = true
 paginate = 10
+relative = true
 
 [indexes]
   tag = "tags"
