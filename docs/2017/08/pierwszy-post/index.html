@@ -7,7 +7,7 @@
   <meta name="description" content="">
   <meta name="generator" content="Hugo 0.26" />
 
-  <title>R Markdown &middot; Your site title</title>
+  <title>pierwszy post &middot; Your site title</title>
 
   
   
@@ -36,8 +36,6 @@
   <link href="https://fonts.googleapis.com/css?family=Raleway" rel="stylesheet" type="text/css">
 
   
-  
-  <link rel="alternate" type="application/rss+xml" title="Your site title" href="/tags/r-markdown/index.xml" />
   
 
   
@@ -80,7 +78,19 @@
       
       
         <li class="pure-menu-item">
+          <a class="pure-menu-link" href="/post/"><i class='fa fa-list fa-fw'></i>Posts</a>
+      
+        </li>
+      
+      
+        <li class="pure-menu-item">
           <a class="pure-menu-link" href="/about/"><i class='fa fa-user fa-fw'></i>About</a>
+      
+        </li>
+      
+      
+        <li class="pure-menu-item">
+          <a class="pure-menu-link" href="/contact/"><i class='fa fa-phone fa-fw'></i>Contact</a>
       
         </li>
       
@@ -97,14 +107,14 @@
   <ul class="pure-menu-list">
 
     
+
+    
+
+
+    
     <li class="pure-menu-item">
-      <a class="pure-menu-link" href="/tags/r-markdown/index.xml"><i class="fa fa-rss fa-fw"></i>RSS</a>
+      <a class="pure-menu-link" href="https://facebook.com/*" target="_blank"><i class="fa fa-facebook-square fa-fw"></i>Facebook</a>
     </li>
-    
-
-    
-
-
     
 
 
@@ -156,16 +166,12 @@
 
 
 <div class="header">
-  <h1>R Markdown</h1>
+  <h1>pierwszy post</h1>
+  <h2></h2>
 </div>
-
 <div class="content">
-  
-    <article>
-  <header>
-    <h2><a href="/2017/08/08/pierwszy-post/">pierwszy post</a></h2>
 
-    <div class="post-meta">
+  <div class="post-meta">
 
   <div>
     <i class="fa fa-calendar fa-fw"></i>
@@ -192,16 +198,56 @@
 
 </div>
 
-  </header>
+  <pre class="r"><code>library(ggplot2)
 
-  <p>
-  library(ggplot2) dane = data.frame(x = 1:10, y = 20:29) ggplot(dane, aes(x,y)) + geom_point() 
-  </p>
+dane = data.frame(x = 1:10,
+                  y = 20:29)
+ ggplot(dane, aes(x,y)) +
+   geom_point()</code></pre>
+<p><img src="/post/2017-08-08-pierwszy-post_files/figure-html/unnamed-chunk-1-1.png" width="672" /></p>
+
 
   
-</article>
+<div class="prev-next-post pure-g">
+  <div class="pure-u-1-24" style="text-align: left;">
+    
+  </div>
+  <div class="pure-u-10-24">
+    
+  </div>
+  <div class="pure-u-2-24">
+    &nbsp;
+  </div>
+  <div class="pure-u-10-24">
+    
+  </div>
+  <div class="pure-u-1-24" style="text-align: right;">
+    
+  </div>
+</div>
+
+
 
   
+<div id="disqus_thread"></div>
+<script type="text/javascript">
+
+(function() {
+    
+    
+    if (window.location.hostname == "localhost")
+        return;
+
+    var dsq = document.createElement('script'); dsq.type = 'text/javascript'; dsq.async = true;
+    var disqus_shortname = 'Your Disqus shortname';
+    dsq.src = '//' + disqus_shortname + '.disqus.com/embed.js';
+    (document.getElementsByTagName('head')[0] || document.getElementsByTagName('body')[0]).appendChild(dsq);
+})();
+</script>
+<noscript>Please enable JavaScript to view the <a href="http://disqus.com/?ref_noscript">comments powered by Disqus.</a></noscript>
+<a href="http://disqus.com/" class="dsq-brlink">comments powered by <span class="logo-disqus">Disqus</span></a>
+
+
 </div>
 
 </div>
@@ -224,3 +270,4 @@
 
 </body>
 </html>
+

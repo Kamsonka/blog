@@ -2,30 +2,30 @@
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
     <title>Your site title</title>
-    <link>/blog/</link>
+    <link>/</link>
     <description>Recent content on Your site title</description>
     <generator>Hugo -- gohugo.io</generator>
     <copyright>&amp;copy; 2016. All rights reserved.</copyright>
     <lastBuildDate>Tue, 08 Aug 2017 00:00:00 +0000</lastBuildDate>
     
-	<atom:link href="/blog/index.xml" rel="self" type="application/rss+xml" />
+	<atom:link href="/index.xml" rel="self" type="application/rss+xml" />
     
     
     <item>
       <title>pierwszy post</title>
-      <link>/blog/post/pierwszy-post/</link>
+      <link>/2017/08/08/pierwszy-post/</link>
       <pubDate>Tue, 08 Aug 2017 00:00:00 +0000</pubDate>
       
-      <guid>/blog/post/pierwszy-post/</guid>
+      <guid>/2017/08/08/pierwszy-post/</guid>
       <description>library(ggplot2) dane = data.frame(x = 1:10, y = 20:29) ggplot(dane, aes(x,y)) + geom_point() </description>
     </item>
     
     <item>
       <title>About</title>
-      <link>/blog/about/</link>
+      <link>/about/</link>
       <pubDate>Thu, 05 May 2016 21:48:51 -0700</pubDate>
       
-      <guid>/blog/about/</guid>
+      <guid>/about/</guid>
       <description>This is a &amp;ldquo;hello world&amp;rdquo; example website for the blogdown package. The theme was forked from @jrutheiser/hugo-lithium-theme and modified by Yihui Xie.</description>
     </item>
     

@@ -1,11 +1,14 @@
-baseurl = "/blog/" # Make sure to end baseurl with a '/'
+baseurl = "/" # Make sure to end baseurl with a '/'
 title = "Your site title"
 author = "Your name"
 # Shown in the side menu
 copyright = "&copy; 2016. All rights reserved."
-canonifyurls = true
 paginate = 10
-relative = true
+publishDir = "docs/"
+
+[permalinks]
+    post = "/:year/:month/:day/:title/"
+    page = "/:title/"
 
 [indexes]
   tag = "tags"
@@ -35,35 +38,19 @@ relative = true
     identifier = "home"
     url = "/"
   [[menu.main]]
-    name = "Posts"
-    pre = "<i class='fa fa-list fa-fw'></i>"
-    weight = 1
-    identifier = "post"
-    url = "/post/"
-  [[menu.main]]
     name = "About"
     pre = "<i class='fa fa-user fa-fw'></i>"
-    weight = 2
+    weight = 1
     identifier = "about"
     url = "/about/"
-  [[menu.main]]
-    name = "Contact"
-    pre = "<i class='fa fa-phone fa-fw'></i>"
-    weight = 3
-    url = "/contact/"
 
 [social]
   # Link your social networking accounts to the side menu
   # by entering your username or ID.
 
-  # SNS microblogging
-  facebook = "*"
-
   # SNS photo/video sharing
   photo500px = "*"
-
   # SNS career oriented
   linkedin = "*"
-
   # Techie
   github = "*"
