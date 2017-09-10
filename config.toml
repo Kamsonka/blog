@@ -1,10 +1,9 @@
 baseurl = "/" # Make sure to end baseurl with a '/'
-title = "Your site title"
-author = "Your name"
+title = "PLOTki i PLOTeczki"
+author = "Kamila"
 # Shown in the side menu
-copyright = "&copy; 2016. All rights reserved."
+copyright = ""
 paginate = 10
-publishDir = "docs/"
 
 [permalinks]
     post = "/:year/:month/:day/:title/"
@@ -16,10 +15,10 @@ publishDir = "docs/"
 
 [params]
   # Shown in the home page
-  subtitle = "A Hugo Theme"
-  brand = "Blackburn"
+  subtitle = ""
+  brand = "Ploty, ploteczki"
   googleAnalytics = "Your Google Analytics tracking ID"
-  disqus = "Your Disqus shortname"
+  disqus = "plotyploteczki"
   # CSS name for highlight.js
   highlightjs = "androidstudio"
   highlightjs_extra_languages = ["yaml"]
@@ -34,15 +33,27 @@ publishDir = "docs/"
   [[menu.main]]
     name = "Home"
     pre = "<i class='fa fa-home fa-fw'></i>"
-    weight = 0
+    weight = 1
     identifier = "home"
     url = "/"
   [[menu.main]]
-    name = "About"
+    name = "O mnie"
     pre = "<i class='fa fa-user fa-fw'></i>"
-    weight = 1
+    weight = 2
     identifier = "about"
     url = "/about/"
+  [[menu.main]]
+    name = "Linki"
+    pre = "<i class='fa fa-book fa-fw'></i>"
+    weight = 3
+    identifier = "sources"
+    url = "/sources/"
+  [[menu.main]]
+    name = "Spis treści"
+    pre = "<i class='fa fa-bars fa-fw'></i>"
+    weight = 4
+    identifier = "table-of-contents"
+    url = "/table-of-contents"
 
 [social]
   # Link your social networking accounts to the side menu
