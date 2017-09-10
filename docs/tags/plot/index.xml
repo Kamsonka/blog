@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes" ?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>Plot on PLOTki i PLOTeczki</title>
+    <link>/tags/plot/</link>
+    <description>Recent content in Plot on PLOTki i PLOTeczki</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <lastBuildDate>Sun, 10 Sep 2017 00:00:00 +0000</lastBuildDate>
+    
+	<atom:link href="/tags/plot/index.xml" rel="self" type="application/rss+xml" />
+    
+    
+    <item>
+      <title>Użyteczne źródła</title>
+      <link>/sources/</link>
+      <pubDate>Sun, 10 Sep 2017 00:00:00 +0000</pubDate>
+      
+      <guid>/sources/</guid>
+      <description>GGplot  https://learnr.wordpress.com/2010/03/23/ggplot2-changing-the-default-order-of-legend-labels-and-stacking-of-data/ http://ggplot2.tidyverse.org/ http://www.cookbook-r.com/Graphs/   Kursy R’owe  http://www.pogromcydanych.icm.edu.pl/    Badania przy użyciu R  http://smarterpoland.pl/ http://prokulski.net/ http://szychtawdanych.pl/   Pomocne  https://www.r-bloggers.com/ https://www.rstudio.com/resources/cheatsheets/   </description>
+    </item>
+    
+  </channel>
+</rss>

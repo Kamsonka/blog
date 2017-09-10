@@ -1,0 +1,29 @@
+---
+title: Użyteczne źródła
+author: KW
+date: '2017-09-10'
+slug: sources
+categories:
+  - R
+tags:
+  - link
+  - plot
+---
+
+##GGplot
+- https://learnr.wordpress.com/2010/03/23/ggplot2-changing-the-default-order-of-legend-labels-and-stacking-of-data/
+- http://ggplot2.tidyverse.org/
+- http://www.cookbook-r.com/Graphs/
+
+##Kursy R'owe
+- http://www.pogromcydanych.icm.edu.pl/
+-
+
+##Badania przy użyciu R
+- http://smarterpoland.pl/
+- http://prokulski.net/
+- http://szychtawdanych.pl/
+
+##Pomocne
+- https://www.r-bloggers.com/
+- https://www.rstudio.com/resources/cheatsheets/
