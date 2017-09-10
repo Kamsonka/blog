@@ -18,7 +18,7 @@ paginate = 10
   # Shown in the home page
   subtitle = ""
   brand = "Ploty, ploteczki"
-  googleAnalytics = "Your Google Analytics tracking ID"
+  googleAnalytics = "UA-106159895-1"
   disqus = "plotyploteczki"
   # CSS name for highlight.js
   highlightjs = "androidstudio"
@@ -59,7 +59,6 @@ paginate = 10
 [social]
   # Link your social networking accounts to the side menu
   # by entering your username or ID.
-
   # SNS photo/video sharing
   photo500px = "*"
   # SNS career oriented
