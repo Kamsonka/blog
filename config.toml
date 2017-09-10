@@ -1,5 +1,5 @@
 baseurl = "/" # Make sure to end baseurl with a '/'
-title = "PLOTki i PLOTeczki"
+title = "PLOTy i Ploteczki"
 author = "Kamila"
 publishDir = "docs"
 # Shown in the side menu
