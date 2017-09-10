@@ -1,6 +1,7 @@
 baseurl = "/" # Make sure to end baseurl with a '/'
 title = "PLOTki i PLOTeczki"
 author = "Kamila"
+publishDir = "docs"
 # Shown in the side menu
 copyright = ""
 paginate = 10
