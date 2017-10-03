@@ -5,6 +5,7 @@ date: '2017-09-10'
 slug: table-of-contents
 categories: []
 tags: []
+output: html_document
 ---
 
 ## Rodzaje wykresów

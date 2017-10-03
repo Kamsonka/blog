@@ -5,7 +5,7 @@ date: '2017-10-03'
 slug: geom-point-wykres-punktowy
 categories: []
 tags: []
-output: github_document
+output: html_document
 ---
 
 Wykres punktowy jest jeszcze prostszy od wykresu słupkowego.
