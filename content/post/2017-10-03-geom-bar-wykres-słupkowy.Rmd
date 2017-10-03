@@ -5,6 +5,7 @@ date: '2017-10-03'
 slug: geom-bar-wykres-słupkowy
 categories: []
 tags: []
+output: github_document
 ---
 
 Hej! Zanim rozpoczniemy przygodę z ggplot potrzebujemy wczytac bilbioteki i dane na których będziemy pracować.
