@@ -11,22 +11,22 @@
     
     
     <item>
-      <title>geom_bar wykres słupkowy</title>
-      <link>/2017/10/03/geom_bar-wykres-s%C5%82upkowy/</link>
+      <title>geom_bar</title>
+      <link>/2017/10/03/geom_bar/</link>
       <pubDate>Tue, 03 Oct 2017 00:00:00 +0000</pubDate>
       
-      <guid>/2017/10/03/geom_bar-wykres-s%C5%82upkowy/</guid>
+      <guid>/2017/10/03/geom_bar/</guid>
       <description>Hej! Zanim rozpoczniemy przygodę z ggplot potrzebujemy wczytac bilbioteki i dane na których będziemy pracować.
 library(ggplot2) library(datasets) Z pakietu datasets wybieram dane ‘women’ pokazujące wysokość i wagę kobiet w wieku 30-39 lat.
 datasets::women ## height weight ## 1 58 115 ## 2 59 117 ## 3 60 120 ## 4 61 123 ## 5 62 126 ## 6 63 129 ## 7 64 132 ## 8 65 135 ## 9 66 139 ## 10 67 142 ## 11 68 146 ## 12 69 150 ## 13 70 154 ## 14 71 159 ## 15 72 164 Pierwszy wykres!</description>
     </item>
     
     <item>
-      <title>geom_point Wykres punktowy</title>
-      <link>/2017/10/03/geom_point-wykres-punktowy/</link>
+      <title>geom_point</title>
+      <link>/2017/10/03/geom_point/</link>
       <pubDate>Tue, 03 Oct 2017 00:00:00 +0000</pubDate>
       
-      <guid>/2017/10/03/geom_point-wykres-punktowy/</guid>
+      <guid>/2017/10/03/geom_point/</guid>
       <description>Wykres punktowy jest jeszcze prostszy od wykresu słupkowego.
 library(ggplot2) library(datasets) Początek jest zawsze ten sam: ggplot() Funkcja która rysuje kropki na wykresie to geom_point()
 ggplot(data = women, aes(x = height, y = weight)) + geom_point() Dodatkowymi argumentami geom_point mogą być: kształt, kolor, wielkość.

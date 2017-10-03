@@ -7,7 +7,7 @@
   <meta name="description" content="">
   <meta name="generator" content="Hugo 0.26" />
 
-  <title>geom_bar wykres słupkowy &middot; PLOTy i Ploteczki</title>
+  <title>geom_point &middot; PLOTy i Ploteczki</title>
 
   
   
@@ -158,7 +158,7 @@
 
 
 <div class="header">
-  <h1>geom_bar wykres słupkowy</h1>
+  <h1>geom_point</h1>
   <h2></h2>
 </div>
 <div class="content">
@@ -181,49 +181,29 @@
 
 </div>
 
-  <p>Hej! Zanim rozpoczniemy przygodę z ggplot potrzebujemy wczytac bilbioteki i dane na których będziemy pracować.</p>
+  <p>Wykres punktowy jest jeszcze prostszy od wykresu słupkowego.</p>
 <pre class="r"><code>library(ggplot2)
 library(datasets)</code></pre>
-<p>Z pakietu datasets wybieram dane ‘women’ pokazujące wysokość i wagę kobiet w wieku 30-39 lat.</p>
-<pre class="r"><code>datasets::women</code></pre>
-<pre><code>##    height weight
-## 1      58    115
-## 2      59    117
-## 3      60    120
-## 4      61    123
-## 5      62    126
-## 6      63    129
-## 7      64    132
-## 8      65    135
-## 9      66    139
-## 10     67    142
-## 11     68    146
-## 12     69    150
-## 13     70    154
-## 14     71    159
-## 15     72    164</code></pre>
-<div id="pierwszy-wykres" class="section level2">
-<h2>Pierwszy wykres!</h2>
-<pre class="r"><code>ggplot(data = women, aes(x = height, y = weight)) + # aes określa m.in. osie x i y, co i gdzie ma się rysować
-  geom_bar(stat = &#39;identity&#39;) # określenie rodzaju wykresu. w tym przypadku jest to wykres słupkowy</code></pre>
-<p><img src="/post/2017-10-03-geom-bar_files/figure-html/unnamed-chunk-3-1.png" width="672" style="display: block; margin: auto;" /></p>
-<p>Argument <em>stat</em> wskazuje w jakiej postaci mamy dane. <em>‘identity’</em> znaczy, że podane dane są już odpowiednio przygotowane do plotowania. domyślnie stat = ‘count’</p>
-<p>Argumenty aes() można również przypisywać za każdym razem w funkcji geom_…(). Argumenami geom_bar() mogą być m.in. kolor i wypełnienie.</p>
-<pre class="r"><code>a &lt;- ggplot(data = women, aes(x = height, y = weight)) +
-  geom_bar(color = &#39;black&#39;, # obwoluta słupków
-           fill = &#39;#0099cc&#39;,  # wypełnienie słupków 
-           stat = &#39;identity&#39;) 
-b &lt;- ggplot(data = women, aes(x = height, y = weight)) +
-  geom_bar(fill = &#39;#0099cc&#39;,  # samo wypełnienie słupków 
-           stat = &#39;identity&#39;) 
-gridExtra::grid.arrange(a, b , ncol = 2)</code></pre>
-<p><img src="/post/2017-10-03-geom-bar_files/figure-html/unnamed-chunk-4-1.png" width="672" style="display: block; margin: auto;" /></p>
+<p>Początek jest zawsze ten sam: ggplot() Funkcja która rysuje kropki na wykresie to geom_point()</p>
+<pre class="r"><code>ggplot(data = women,
+       aes(x = height, y = weight)) +
+         geom_point()</code></pre>
+<p><img src="/post/2017-10-03-geom-point_files/figure-html/unnamed-chunk-2-1.png" width="672" style="display: block; margin: auto;" /></p>
+<p>Dodatkowymi argumentami geom_point mogą być: <em>kształt, kolor, wielkość</em>.</p>
+<div id="kolor" class="section level2">
+<h2>Kolor</h2>
+<pre class="r"><code>ggplot(data = women,
+       aes(x = height, y = weight)) +
+         geom_point(color = &#39;#0099CC&#39;)</code></pre>
+<p><img src="/post/2017-10-03-geom-point_files/figure-html/unnamed-chunk-3-1.png" width="672" style="display: block; margin: auto;" /></p>
 </div>
-<div id="wykres-supkowy-poziomy" class="section level2">
-<h2>wykres słupkowy poziomy</h2>
-<pre class="r"><code>b +
-  coord_flip()</code></pre>
-<p><img src="/post/2017-10-03-geom-bar_files/figure-html/unnamed-chunk-5-1.png" width="672" style="display: block; margin: auto;" /></p>
+<div id="rodzaje-punktorow-i-wielkosc" class="section level2">
+<h2>Rodzaje punktorów i wielkość</h2>
+<p><img src="/post/2017-10-03-geom-point_files/figure-html/unnamed-chunk-4-1.png" width="960" style="display: block; margin: auto;" /></p>
+<pre class="r"><code>ggplot(data = women,
+       aes(x = height, y = weight)) +
+  geom_point(shape = 17, color = &#39;#0099CC&#39;, size = 4)</code></pre>
+<p><img src="/post/2017-10-03-geom-point_files/figure-html/unnamed-chunk-5-1.png" width="672" style="display: block; margin: auto;" /></p>
 </div>
 
 
@@ -231,14 +211,8 @@ gridExtra::grid.arrange(a, b , ncol = 2)</code></pre>
 <div class="prev-next-post pure-g">
   <div class="pure-u-1-24" style="text-align: left;">
     
-    <a href="/2017/10/03/geom_point-wykres-punktowy/"><i class="fa fa-chevron-left"></i></a>
-    
   </div>
   <div class="pure-u-10-24">
-    
-    <nav class="prev">
-      <a href="/2017/10/03/geom_point-wykres-punktowy/">geom_point Wykres punktowy</a>
-    </nav>
     
   </div>
   <div class="pure-u-2-24">
@@ -246,8 +220,14 @@ gridExtra::grid.arrange(a, b , ncol = 2)</code></pre>
   </div>
   <div class="pure-u-10-24">
     
+    <nav class="next">
+      <a href="/2017/10/03/geom_bar/">geom_bar</a>
+    </nav>
+    
   </div>
   <div class="pure-u-1-24" style="text-align: right;">
+    
+    <a href="/2017/10/03/geom_bar/"><i class="fa fa-chevron-right"></i></a>
     
   </div>
 </div>

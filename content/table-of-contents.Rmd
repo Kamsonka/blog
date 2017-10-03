@@ -5,12 +5,11 @@ date: '2017-09-10'
 slug: table-of-contents
 categories: []
 tags: []
-output: html_document
 ---
 
 ## Rodzaje wykresów
 
-- [geom_bar](http://plotyploteczki.pl/2017/10/03/geom_bar)
+- [geom_bar](http://plotyploteczki.pl/2017/10/03/geom_bar/)
 - geom_boxplot
 - geom_density
 - geom_dotplot

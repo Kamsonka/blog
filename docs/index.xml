@@ -11,22 +11,22 @@
     
     
     <item>
-      <title>geom_bar wykres słupkowy</title>
-      <link>/2017/10/03/geom_bar-wykres-s%C5%82upkowy/</link>
+      <title>geom_bar</title>
+      <link>/2017/10/03/geom_bar/</link>
       <pubDate>Tue, 03 Oct 2017 00:00:00 +0000</pubDate>
       
-      <guid>/2017/10/03/geom_bar-wykres-s%C5%82upkowy/</guid>
+      <guid>/2017/10/03/geom_bar/</guid>
       <description>Hej! Zanim rozpoczniemy przygodę z ggplot potrzebujemy wczytac bilbioteki i dane na których będziemy pracować.
 library(ggplot2) library(datasets) Z pakietu datasets wybieram dane ‘women’ pokazujące wysokość i wagę kobiet w wieku 30-39 lat.
 datasets::women ## height weight ## 1 58 115 ## 2 59 117 ## 3 60 120 ## 4 61 123 ## 5 62 126 ## 6 63 129 ## 7 64 132 ## 8 65 135 ## 9 66 139 ## 10 67 142 ## 11 68 146 ## 12 69 150 ## 13 70 154 ## 14 71 159 ## 15 72 164 Pierwszy wykres!</description>
     </item>
     
     <item>
-      <title>geom_point Wykres punktowy</title>
-      <link>/2017/10/03/geom_point-wykres-punktowy/</link>
+      <title>geom_point</title>
+      <link>/2017/10/03/geom_point/</link>
       <pubDate>Tue, 03 Oct 2017 00:00:00 +0000</pubDate>
       
-      <guid>/2017/10/03/geom_point-wykres-punktowy/</guid>
+      <guid>/2017/10/03/geom_point/</guid>
       <description>Wykres punktowy jest jeszcze prostszy od wykresu słupkowego.
 library(ggplot2) library(datasets) Początek jest zawsze ten sam: ggplot() Funkcja która rysuje kropki na wykresie to geom_point()
 ggplot(data = women, aes(x = height, y = weight)) + geom_point() Dodatkowymi argumentami geom_point mogą być: kształt, kolor, wielkość.
@@ -48,7 +48,7 @@ Kolor ggplot(data = women, aes(x = height, y = weight)) + geom_point(color = &am
       <pubDate>Sun, 10 Sep 2017 00:00:00 +0000</pubDate>
       
       <guid>/table-of-contents/</guid>
-      <description> Rodzaje wykresów  geom_bar geom_boxplot geom_density geom_dotplot geom_hex geom_jitter geom_map geom_abline geom_point geom_ribbon geom_smooth geom_area geom_freqpoly geom_histogram geom_quantile geom_rug geom_col geom_violin geom_line geom_step geom_crossbar geom_errorbar geom_linerange geom_pointrange  Doprecyzowanie wykresu  stat position grupowanie po color, fill,shape, size, lietype, group grupowanie po facet_ przekształceni coord_ scale  Napisy  geom_text geom_label annotation caption  Theme  tytuł osie x i y legenda panel wykresu guides  Typowe probemy  Kolejność elementów wykresu  </description>
+      <description>Rodzaje wykresów  geom_bar geom_boxplot geom_density geom_dotplot geom_hex geom_jitter geom_map geom_abline geom_point geom_ribbon geom_smooth geom_area geom_freqpoly geom_histogram geom_quantile geom_rug geom_col geom_violin geom_line geom_step geom_crossbar geom_errorbar geom_linerange geom_pointrange   Doprecyzowanie wykresu  stat position grupowanie po color, fill,shape, size, lietype, group grupowanie po facet_ przekształceni coord_ scale   Napisy  geom_text geom_label annotation caption   Theme  tytuł osie x i y legenda panel wykresu guides   Typowe probemy  Kolejność elementów wykresu   </description>
     </item>
     
     <item>
@@ -58,15 +58,6 @@ Kolor ggplot(data = women, aes(x = height, y = weight)) + geom_point(color = &am
       
       <guid>/sources/</guid>
       <description>GGplot  https://learnr.wordpress.com/2010/03/23/ggplot2-changing-the-default-order-of-legend-labels-and-stacking-of-data/ http://ggplot2.tidyverse.org/ http://www.cookbook-r.com/Graphs/   Kursy R’owe  http://www.pogromcydanych.icm.edu.pl/    Badania przy użyciu R  http://smarterpoland.pl/ http://prokulski.net/ http://szychtawdanych.pl/   Pomocne  https://www.r-bloggers.com/ https://www.rstudio.com/resources/cheatsheets/   </description>
-    </item>
-    
-    <item>
-      <title></title>
-      <link>/table-of-contents/</link>
-      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
-      
-      <guid>/table-of-contents/</guid>
-      <description>Spis treści       code{white-space: pre;} pre:not([class]) { background-color: white; }  if (window.hljs &amp;&amp; document.readyState &amp;&amp; document.readyState === &#34;complete&#34;) { window.setTimeout(function() { hljs.initHighlighting(); }, 0); }  h1 { font-size: 34px; } h1.title { font-size: 38px; } h2 { font-size: 30px; } h3 { font-size: 24px; } h4 { font-size: 18px; } h5 { font-size: 16px; } h6 { font-size: 12px; } .table th:not([align]) { text-align: left; }    .</description>
     </item>
     
   </channel>
