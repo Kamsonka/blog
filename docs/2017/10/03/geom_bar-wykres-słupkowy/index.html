@@ -184,7 +184,7 @@
   <p>Hej! Zanim rozpoczniemy przygodę z ggplot potrzebujemy wczytac bilbioteki i dane na których będziemy pracować.</p>
 <pre class="r"><code>library(ggplot2)
 library(datasets)</code></pre>
-<p>z pakietu datasets wybieram dane ‘women’ pokazujące wysokość i wagę kobiet w wieku 30-39 lat.</p>
+<p>Z pakietu datasets wybieram dane ‘women’ pokazujące wysokość i wagę kobiet w wieku 30-39 lat.</p>
 <pre class="r"><code>datasets::women</code></pre>
 <pre><code>##    height weight
 ## 1      58    115
@@ -206,7 +206,8 @@ library(datasets)</code></pre>
 <h2>Pierwszy wykres!</h2>
 <pre class="r"><code>ggplot(data = women, aes(x = height, y = weight)) + # aes określa m.in. osie x i y, co i gdzie ma się rysować
   geom_bar(stat = &#39;identity&#39;) # określenie rodzaju wykresu. w tym przypadku jest to wykres słupkowy</code></pre>
-<p><img src="2017-10-03-geom-bar-wykres-s%C5%82upkowy_files/figure-html/unnamed-chunk-3-1.png" width="672" /> Argument <em>stat</em> wskazuje w jakiej postaci mamy dane. <em>‘identity’</em> znaczy, że podane dane są już odpowiednio przygotowane do plotowania. [domyślnie stat = ‘count’]</p>
+<p><img src="/post/2017-10-03-geom-bar_files/figure-html/unnamed-chunk-3-1.png" width="672" style="display: block; margin: auto;" /></p>
+<p>Argument <em>stat</em> wskazuje w jakiej postaci mamy dane. <em>‘identity’</em> znaczy, że podane dane są już odpowiednio przygotowane do plotowania. domyślnie stat = ‘count’</p>
 <p>Argumenty aes() można również przypisywać za każdym razem w funkcji geom_…(). Argumenami geom_bar() mogą być m.in. kolor i wypełnienie.</p>
 <pre class="r"><code>a &lt;- ggplot(data = women, aes(x = height, y = weight)) +
   geom_bar(color = &#39;black&#39;, # obwoluta słupków
@@ -216,13 +217,13 @@ b &lt;- ggplot(data = women, aes(x = height, y = weight)) +
   geom_bar(fill = &#39;#0099cc&#39;,  # samo wypełnienie słupków 
            stat = &#39;identity&#39;) 
 gridExtra::grid.arrange(a, b , ncol = 2)</code></pre>
-<p><img src="2017-10-03-geom-bar-wykres-s%C5%82upkowy_files/figure-html/unnamed-chunk-4-1.png" width="672" /></p>
+<p><img src="/post/2017-10-03-geom-bar_files/figure-html/unnamed-chunk-4-1.png" width="672" style="display: block; margin: auto;" /></p>
 </div>
 <div id="wykres-supkowy-poziomy" class="section level2">
 <h2>wykres słupkowy poziomy</h2>
 <pre class="r"><code>b +
   coord_flip()</code></pre>
-<p><img src="2017-10-03-geom-bar-wykres-s%C5%82upkowy_files/figure-html/unnamed-chunk-5-1.png" width="672" /></p>
+<p><img src="/post/2017-10-03-geom-bar_files/figure-html/unnamed-chunk-5-1.png" width="672" style="display: block; margin: auto;" /></p>
 </div>
 
 

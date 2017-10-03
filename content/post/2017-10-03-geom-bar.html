@@ -1,0 +1,56 @@
+---
+title: geom_bar wykres słupkowy
+author: "KW"
+date: '2017-10-03'
+output: html_document
+slug: geom-bar
+tags: []
+categories: []
+---
+
+
+
+<p>Hej! Zanim rozpoczniemy przygodę z ggplot potrzebujemy wczytac bilbioteki i dane na których będziemy pracować.</p>
+<pre class="r"><code>library(ggplot2)
+library(datasets)</code></pre>
+<p>Z pakietu datasets wybieram dane ‘women’ pokazujące wysokość i wagę kobiet w wieku 30-39 lat.</p>
+<pre class="r"><code>datasets::women</code></pre>
+<pre><code>##    height weight
+## 1      58    115
+## 2      59    117
+## 3      60    120
+## 4      61    123
+## 5      62    126
+## 6      63    129
+## 7      64    132
+## 8      65    135
+## 9      66    139
+## 10     67    142
+## 11     68    146
+## 12     69    150
+## 13     70    154
+## 14     71    159
+## 15     72    164</code></pre>
+<div id="pierwszy-wykres" class="section level2">
+<h2>Pierwszy wykres!</h2>
+<pre class="r"><code>ggplot(data = women, aes(x = height, y = weight)) + # aes określa m.in. osie x i y, co i gdzie ma się rysować
+  geom_bar(stat = &#39;identity&#39;) # określenie rodzaju wykresu. w tym przypadku jest to wykres słupkowy</code></pre>
+<p><img src="/post/2017-10-03-geom-bar_files/figure-html/unnamed-chunk-3-1.png" width="672" style="display: block; margin: auto;" /></p>
+<p>Argument <em>stat</em> wskazuje w jakiej postaci mamy dane. <em>‘identity’</em> znaczy, że podane dane są już odpowiednio przygotowane do plotowania. domyślnie stat = ‘count’</p>
+<p>Argumenty aes() można również przypisywać za każdym razem w funkcji geom_…(). Argumenami geom_bar() mogą być m.in. kolor i wypełnienie.</p>
+<pre class="r"><code>a &lt;- ggplot(data = women, aes(x = height, y = weight)) +
+  geom_bar(color = &#39;black&#39;, # obwoluta słupków
+           fill = &#39;#0099cc&#39;,  # wypełnienie słupków 
+           stat = &#39;identity&#39;) 
+b &lt;- ggplot(data = women, aes(x = height, y = weight)) +
+  geom_bar(fill = &#39;#0099cc&#39;,  # samo wypełnienie słupków 
+           stat = &#39;identity&#39;) 
+gridExtra::grid.arrange(a, b , ncol = 2)</code></pre>
+<p><img src="/post/2017-10-03-geom-bar_files/figure-html/unnamed-chunk-4-1.png" width="672" style="display: block; margin: auto;" /></p>
+</div>
+<div id="wykres-supkowy-poziomy" class="section level2">
+<h2>wykres słupkowy poziomy</h2>
+<pre class="r"><code>b +
+  coord_flip()</code></pre>
+<p><img src="/post/2017-10-03-geom-bar_files/figure-html/unnamed-chunk-5-1.png" width="672" style="display: block; margin: auto;" /></p>
+</div>

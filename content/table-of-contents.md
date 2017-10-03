@@ -10,7 +10,7 @@ output: html_document
 
 ## Rodzaje wykresów
 
-- [geom_bar](http://plotyploteczki.pl/2017/10/03/geom_bar-wykres-s%C5%82upkowy/)
+- [geom_bar](http://plotyploteczki.pl/2017/10/03/geom_bar)
 - geom_boxplot
 - geom_density
 - geom_dotplot
@@ -18,7 +18,7 @@ output: html_document
 - geom_jitter
 - geom_map
 - geom_abline
-- [geom_point](http://plotyploteczki.pl/2017/10/03/geom_point-wykres-punktowy/)
+- [geom_point](http://plotyploteczki.pl/2017/10/03/geom_point/)
 - geom_ribbon
 - geom_smooth
 - geom_area

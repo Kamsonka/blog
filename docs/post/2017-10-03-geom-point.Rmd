@@ -2,7 +2,7 @@
 title: geom_point Wykres punktowy
 author: KW
 date: '2017-10-03'
-slug: geom-point-wykres-punktowy
+slug: geom-point
 categories: []
 tags: []
 output: html_document
