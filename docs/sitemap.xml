@@ -3,13 +3,18 @@
   xmlns:xhtml="http://www.w3.org/1999/xhtml">
   
   <url>
-    <loc>/about/</loc>
-    <lastmod>2017-09-10T21:48:51-07:00</lastmod>
+    <loc>/2017/10/03/geom_bar-wykres-s%C5%82upkowy/</loc>
+    <lastmod>2017-10-03T00:00:00+00:00</lastmod>
   </url>
   
   <url>
-    <loc>/2017/09/10/pierwszy-wykres-w-ggplot/</loc>
-    <lastmod>2017-09-10T00:00:00+00:00</lastmod>
+    <loc>/2017/10/03/geom_point-wykres-punktowy/</loc>
+    <lastmod>2017-10-03T00:00:00+00:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>/about/</loc>
+    <lastmod>2017-09-10T21:48:51-07:00</lastmod>
   </url>
   
   <url>
@@ -23,6 +28,10 @@
   </url>
   
   <url>
+    <loc>/table-of-contents/</loc>
+  </url>
+  
+  <url>
     <loc>/tags/link/</loc>
     <lastmod>2017-09-10T00:00:00+00:00</lastmod>
     <priority>0</priority>
@@ -30,7 +39,7 @@
   
   <url>
     <loc>/</loc>
-    <lastmod>2017-09-10T21:48:51-07:00</lastmod>
+    <lastmod>2017-10-03T00:00:00+00:00</lastmod>
     <priority>0</priority>
   </url>
   
@@ -42,7 +51,7 @@
   
   <url>
     <loc>/post/</loc>
-    <lastmod>2017-09-10T00:00:00+00:00</lastmod>
+    <lastmod>2017-10-03T00:00:00+00:00</lastmod>
     <priority>0</priority>
   </url>
   

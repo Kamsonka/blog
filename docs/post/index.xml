@@ -5,18 +5,32 @@
     <link>/post/</link>
     <description>Recent content in Posts on PLOTy i Ploteczki</description>
     <generator>Hugo -- gohugo.io</generator>
-    <lastBuildDate>Sun, 10 Sep 2017 00:00:00 +0000</lastBuildDate>
+    <lastBuildDate>Tue, 03 Oct 2017 00:00:00 +0000</lastBuildDate>
     
 	<atom:link href="/post/index.xml" rel="self" type="application/rss+xml" />
     
     
     <item>
-      <title>Pierwszy wykres w ggplot</title>
-      <link>/2017/09/10/pierwszy-wykres-w-ggplot/</link>
-      <pubDate>Sun, 10 Sep 2017 00:00:00 +0000</pubDate>
+      <title>geom_bar wykres słupkowy</title>
+      <link>/2017/10/03/geom_bar-wykres-s%C5%82upkowy/</link>
+      <pubDate>Tue, 03 Oct 2017 00:00:00 +0000</pubDate>
       
-      <guid>/2017/09/10/pierwszy-wykres-w-ggplot/</guid>
-      <description>xxxxxxxxxxxxxxxxx</description>
+      <guid>/2017/10/03/geom_bar-wykres-s%C5%82upkowy/</guid>
+      <description>Hej! Zanim rozpoczniemy przygodę z ggplot potrzebujemy wczytac bilbioteki i dane na których będziemy pracować.
+library(ggplot2) library(datasets) z pakietu datasets wybieram dane ‘women’ pokazujące wysokość i wagę kobiet w wieku 30-39 lat.
+datasets::women ## height weight ## 1 58 115 ## 2 59 117 ## 3 60 120 ## 4 61 123 ## 5 62 126 ## 6 63 129 ## 7 64 132 ## 8 65 135 ## 9 66 139 ## 10 67 142 ## 11 68 146 ## 12 69 150 ## 13 70 154 ## 14 71 159 ## 15 72 164 Pierwszy wykres!</description>
+    </item>
+    
+    <item>
+      <title>geom_point Wykres punktowy</title>
+      <link>/2017/10/03/geom_point-wykres-punktowy/</link>
+      <pubDate>Tue, 03 Oct 2017 00:00:00 +0000</pubDate>
+      
+      <guid>/2017/10/03/geom_point-wykres-punktowy/</guid>
+      <description>Wykres punktowy jest jeszcze prostszy od wykresu słupkowego.
+library(ggplot2) library(datasets) Początek jest zawsze ten sam: ggplot() Funkcja która rysuje kropki na wykresie to geom_point()
+ggplot(data = women, aes(x = height, y = weight)) + geom_point() Dodatkowymi argumentami geom_point mogą być: kształt, kolor, wielkość.
+Kolor ggplot(data = women, aes(x = height, y = weight)) + geom_point(color = &amp;#39;#0099CC&amp;#39;)  Rodzaje punktorów i wielkość ggplot(data = women, aes(x = height, y = weight)) + geom_point(shape = 17, color = &amp;#39;#0099CC&amp;#39;, size = 4)  </description>
     </item>
     
   </channel>

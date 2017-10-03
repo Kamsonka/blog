@@ -7,7 +7,7 @@
   <meta name="description" content="">
   <meta name="generator" content="Hugo 0.26" />
 
-  <title>PLOTy i Ploteczki</title>
+  <title>geom_bar wykres słupkowy &middot; PLOTy i Ploteczki</title>
 
   
   
@@ -36,8 +36,6 @@
   <link href="https://fonts.googleapis.com/css?family=Raleway" rel="stylesheet" type="text/css">
 
   
-  
-  <link rel="alternate" type="application/rss+xml" title="PLOTy i Ploteczki" href="/index.xml" />
   
 
   
@@ -109,10 +107,6 @@
   <ul class="pure-menu-list">
 
     
-    <li class="pure-menu-item">
-      <a class="pure-menu-link" href="/index.xml"><i class="fa fa-rss fa-fw"></i>RSS</a>
-    </li>
-    
 
     
 
@@ -164,17 +158,12 @@
 
 
 <div class="header">
-  <h1>PLOTy i Ploteczki</h1>
+  <h1>geom_bar wykres słupkowy</h1>
   <h2></h2>
 </div>
-
 <div class="content">
-  
-    <article>
-  <header>
-    <h2><a href="/2017/10/03/geom_bar-wykres-s%C5%82upkowy/">geom_bar wykres słupkowy</a></h2>
 
-    <div class="post-meta">
+  <div class="post-meta">
 
   <div>
     <i class="fa fa-calendar fa-fw"></i>
@@ -192,59 +181,96 @@
 
 </div>
 
-  </header>
-
-  <p>
-  Hej! Zanim rozpoczniemy przygodę z ggplot potrzebujemy wczytac bilbioteki i dane na których będziemy pracować.
-library(ggplot2) library(datasets) z pakietu datasets wybieram dane ‘women’ pokazujące wysokość i wagę kobiet w wieku 30-39 lat.
-datasets::women ## height weight ## 1 58 115 ## 2 59 117 ## 3 60 120 ## 4 61 123 ## 5 62 126 ## 6 63 129 ## 7 64 132 ## 8 65 135 ## 9 66 139 ## 10 67 142 ## 11 68 146 ## 12 69 150 ## 13 70 154 ## 14 71 159 ## 15 72 164 Pierwszy wykres!
-  </p>
-
-  
-  <footer>
-    <a href="/2017/10/03/geom_bar-wykres-s%C5%82upkowy/">Read more<i class="fa fa-angle-double-right fa-fw"></i></a>
-  </footer>
-  
-</article>
-
-  
-    <article>
-  <header>
-    <h2><a href="/2017/10/03/geom_point-wykres-punktowy/">geom_point Wykres punktowy</a></h2>
-
-    <div class="post-meta">
-
-  <div>
-    <i class="fa fa-calendar fa-fw"></i>
-    <time>03 Oct 2017, 00:00</time>
-  </div>
-
-  
-
-  
-
-  
-  
-  
-  
-
+  <p>Hej! Zanim rozpoczniemy przygodę z ggplot potrzebujemy wczytac bilbioteki i dane na których będziemy pracować.</p>
+<pre class="r"><code>library(ggplot2)
+library(datasets)</code></pre>
+<p>z pakietu datasets wybieram dane ‘women’ pokazujące wysokość i wagę kobiet w wieku 30-39 lat.</p>
+<pre class="r"><code>datasets::women</code></pre>
+<pre><code>##    height weight
+## 1      58    115
+## 2      59    117
+## 3      60    120
+## 4      61    123
+## 5      62    126
+## 6      63    129
+## 7      64    132
+## 8      65    135
+## 9      66    139
+## 10     67    142
+## 11     68    146
+## 12     69    150
+## 13     70    154
+## 14     71    159
+## 15     72    164</code></pre>
+<div id="pierwszy-wykres" class="section level2">
+<h2>Pierwszy wykres!</h2>
+<pre class="r"><code>ggplot(data = women, aes(x = height, y = weight)) + # aes określa m.in. osie x i y, co i gdzie ma się rysować
+  geom_bar(stat = &#39;identity&#39;) # określenie rodzaju wykresu. w tym przypadku jest to wykres słupkowy</code></pre>
+<p><img src="2017-10-03-geom-bar-wykres-s%C5%82upkowy_files/figure-html/unnamed-chunk-3-1.png" width="672" /> Argument <em>stat</em> wskazuje w jakiej postaci mamy dane. <em>‘identity’</em> znaczy, że podane dane są już odpowiednio przygotowane do plotowania. [domyślnie stat = ‘count’]</p>
+<p>Argumenty aes() można również przypisywać za każdym razem w funkcji geom_…(). Argumenami geom_bar() mogą być m.in. kolor i wypełnienie.</p>
+<pre class="r"><code>a &lt;- ggplot(data = women, aes(x = height, y = weight)) +
+  geom_bar(color = &#39;black&#39;, # obwoluta słupków
+           fill = &#39;#0099cc&#39;,  # wypełnienie słupków 
+           stat = &#39;identity&#39;) 
+b &lt;- ggplot(data = women, aes(x = height, y = weight)) +
+  geom_bar(fill = &#39;#0099cc&#39;,  # samo wypełnienie słupków 
+           stat = &#39;identity&#39;) 
+gridExtra::grid.arrange(a, b , ncol = 2)</code></pre>
+<p><img src="2017-10-03-geom-bar-wykres-s%C5%82upkowy_files/figure-html/unnamed-chunk-4-1.png" width="672" /></p>
+</div>
+<div id="wykres-supkowy-poziomy" class="section level2">
+<h2>wykres słupkowy poziomy</h2>
+<pre class="r"><code>b +
+  coord_flip()</code></pre>
+<p><img src="2017-10-03-geom-bar-wykres-s%C5%82upkowy_files/figure-html/unnamed-chunk-5-1.png" width="672" /></p>
 </div>
 
-  </header>
-
-  <p>
-  Wykres punktowy jest jeszcze prostszy od wykresu słupkowego.
-library(ggplot2) library(datasets) Początek jest zawsze ten sam: ggplot() Funkcja która rysuje kropki na wykresie to geom_point()
-ggplot(data = women, aes(x = height, y = weight)) + geom_point() Dodatkowymi argumentami geom_point mogą być: kształt, kolor, wielkość.
-Kolor ggplot(data = women, aes(x = height, y = weight)) + geom_point(color = &#39;#0099CC&#39;)  Rodzaje punktorów i wielkość ggplot(data = women, aes(x = height, y = weight)) + geom_point(shape = 17, color = &#39;#0099CC&#39;, size = 4)  
-  </p>
 
   
-</article>
+<div class="prev-next-post pure-g">
+  <div class="pure-u-1-24" style="text-align: left;">
+    
+    <a href="/2017/10/03/geom_point-wykres-punktowy/"><i class="fa fa-chevron-left"></i></a>
+    
+  </div>
+  <div class="pure-u-10-24">
+    
+    <nav class="prev">
+      <a href="/2017/10/03/geom_point-wykres-punktowy/">geom_point Wykres punktowy</a>
+    </nav>
+    
+  </div>
+  <div class="pure-u-2-24">
+    &nbsp;
+  </div>
+  <div class="pure-u-10-24">
+    
+  </div>
+  <div class="pure-u-1-24" style="text-align: right;">
+    
+  </div>
+</div>
+
+
 
   
+<div id="disqus_thread"></div>
+<script type="text/javascript">
 
-  
+(function() {
+    
+    
+    if (window.location.hostname == "localhost")
+        return;
+
+    var dsq = document.createElement('script'); dsq.type = 'text/javascript'; dsq.async = true;
+    var disqus_shortname = 'plotyploteczki';
+    dsq.src = '//' + disqus_shortname + '.disqus.com/embed.js';
+    (document.getElementsByTagName('head')[0] || document.getElementsByTagName('body')[0]).appendChild(dsq);
+})();
+</script>
+<noscript>Please enable JavaScript to view the <a href="http://disqus.com/?ref_noscript">comments powered by Disqus.</a></noscript>
+<a href="http://disqus.com/" class="dsq-brlink">comments powered by <span class="logo-disqus">Disqus</span></a>
 
 
 </div>
