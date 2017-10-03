@@ -15,21 +15,26 @@ library(ggplot2)
 library(datasets)
 ```
 
-z pakietu datasets wybieram dane 'women' pokazujące wysokość i wagę kobiet w wieku 30-39 lat.
+Z pakietu datasets wybieram dane 'women' pokazujące wysokość i wagę kobiet w wieku 30-39 lat.
+
 ```{r}
 datasets::women
 
 ```
+
 ## Pierwszy wykres!
-```{r}
+
+```{r fig.align='center'}
 ggplot(data = women, aes(x = height, y = weight)) + # aes określa m.in. osie x i y, co i gdzie ma się rysować
   geom_bar(stat = 'identity') # określenie rodzaju wykresu. w tym przypadku jest to wykres słupkowy
 ```
+
 Argument *stat* wskazuje w jakiej postaci mamy dane. *'identity'* znaczy, że podane dane są już odpowiednio przygotowane do plotowania. [domyślnie stat = 'count']
 
 Argumenty aes() można również przypisywać za każdym razem w funkcji geom_...().
-Argumenami geom_bar() mogą być m.in. kolor i wypełnienie. 
-```{r}
+Argumenami geom_bar() mogą być m.in. kolor i wypełnienie.
+
+```{r fig.align='center'}
 a <- ggplot(data = women, aes(x = height, y = weight)) +
   geom_bar(color = 'black', # obwoluta słupków
            fill = '#0099cc',  # wypełnienie słupków 
@@ -41,7 +46,8 @@ gridExtra::grid.arrange(a, b , ncol = 2)
 ```
 
 ## wykres słupkowy poziomy
-```{r}
+
+```{r fig.align='center'}
 b +
   coord_flip()
 ```
