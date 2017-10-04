@@ -1,8 +1,8 @@
 ---
-title: Spis treści
+title: GGPLOT2 Spis treści
 author: KW
 date: '2017-09-10'
-slug: table-of-contents
+slug: ggplot2
 categories: []
 tags: []
 ---
@@ -27,7 +27,7 @@ tags: []
 - geom_rug
 - geom_col
 - geom_violin
-- geom_line
+- [geom_line](http://plotyploteczki.pl/2017/10/04/geom_line/)
 - geom_step
 - geom_crossbar
 - geom_errorbar
@@ -38,9 +38,9 @@ tags: []
 
 - stat
 - position
-- grupowanie po color, fill,shape, size, lietype, group
+- grupowanie po color, fill,shape, size, linetype, group
 - grupowanie po facet_
-- przekształceni coord_
+- przekształcenie coord_
 - scale
 
 ## Napisy
@@ -48,11 +48,12 @@ tags: []
 - geom_text
 - geom_label
 - annotation
-- caption
+- [tytuły i podpisy](http://plotyploteczki.pl/2017/10/04/titles/)
+
 
 ## Theme
 
-- tytuł
+- tytuły
 - osie x i y
 - legenda
 - panel wykresu

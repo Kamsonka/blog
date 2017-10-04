@@ -50,11 +50,17 @@ paginate = 10
     identifier = "sources"
     url = "/sources/"
   [[menu.main]]
-    name = "Spis treści"
-    pre = "<i class='fa fa-bars fa-fw'></i>"
+    name = "GGPLOT2"
+    pre = "<i class='fa fa-bar-chart fa-fw'></i>"
     weight = 4
-    identifier = "table-of-contents"
-    url = "/table-of-contents"
+    identifier = "ggplot2"
+    url = "/ggplot2"
+  [[menu.main]]
+    name = "Pakiety"
+    pre = "<i class='fa fa-puzzle-piece fa-fw'></i>"
+    weight = 4
+    identifier = "packages"
+    url = "/packages"
 
 [social]
   # Link your social networking accounts to the side menu

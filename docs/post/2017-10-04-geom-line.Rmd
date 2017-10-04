@@ -1,0 +1,46 @@
+---
+title: geom_line
+author: KW
+date: '2017-10-04'
+slug: geom-line
+categories: []
+tags: []
+output: html_document
+---
+
+## geom_line, czyli nic innego jak wykres liniowy
+
+```{r message=FALSE, warning=FALSE}
+library(lubridate)
+library(ggplot2)
+```
+
+Tworzę tabelę z danymi
+```{r}
+df = data.frame(day = ymd('2016-01-01') + 0:364,
+                value = runif(n = 365, min = 0, max = 150 ))
+head(df)
+```
+
+Malujemy wykres :)
+```{r fig.align='center'}
+ggplot(df, aes(x = day, y = value)) +
+  geom_line()
+```
+
+Możemy zmienić kolor linii, wielkość oraz typ lini:
+```{r fig.align='center'}
+ggplot(df, aes(x = day, y = value)) +
+  geom_line(color = '#0099cc', size = 0.5, linetype = 'twodash')
+```
+
+### Wszystkie możliwe linie wraz z nazwami podane niżej:
+```{r echo=FALSE, message=FALSE, warning=FALSE, paged.print=TRUE, fig.align='center'}
+d=data.frame(lt=c("blank", "solid", "dashed", "dotted", "dotdash", "longdash", "twodash", "1F", "F1", "4C88C488", "12345678"))
+ggplot() +
+scale_x_continuous(name="", limits=c(0,1)) +
+scale_y_discrete(name="linetype") +
+scale_linetype_identity() +
+geom_segment(data=d, mapping=aes(x=0, xend=1, y=lt, yend=lt, linetype=lt))
+```
+

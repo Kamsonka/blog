@@ -1,0 +1,50 @@
+---
+title: Tytuły
+author: KW
+date: '2017-10-04'
+slug: titles
+categories: []
+tags: []
+---
+
+
+
+<div id="startujemy-z-goym-wykresem" class="section level2">
+<h2>startujemy z ‘gołym’ wykresem</h2>
+<pre class="r"><code>library(ggplot2)
+x = rnorm(n = 1000, mean = 50)
+plot = ggplot() + geom_histogram(aes(x), bins = 50)
+plot</code></pre>
+<p><img src="/post/2017-10-04-titles_files/figure-html/unnamed-chunk-1-1.png" width="672" style="display: block; margin: auto;" /></p>
+<div id="jak-dodac-tytu-do-wykresu-w-ggplot" class="section level3">
+<h3>Jak dodać tytuł do wykresu w ggplot?</h3>
+<pre class="r"><code>plot +
+  ggtitle(label = &#39;Tytuł wykresu&#39;, subtitle = &#39;Podtytuł wykresu&#39;)</code></pre>
+<p><img src="/post/2017-10-04-titles_files/figure-html/unnamed-chunk-2-1.png" width="672" style="display: block; margin: auto;" /></p>
+</div>
+<div id="jak-dodaczmienic-tytu-osi-x-i-y" class="section level3">
+<h3>Jak dodać/zmienić tytuł osi x i y?</h3>
+<pre class="r"><code>plot +
+  xlab(&#39;Tytuł osi x&#39;) +
+  ylab(&#39;Tytuł osi y&#39;)</code></pre>
+<p><img src="/post/2017-10-04-titles_files/figure-html/unnamed-chunk-3-1.png" width="672" style="display: block; margin: auto;" /></p>
+<div id="to-samo-mozna-zrobic-przy-zastosowaniiu-jednej-funkcji" class="section level4">
+<h4>To samo można zrobić przy zastosowaniiu jednej funkcji:</h4>
+<pre class="r"><code>plot +
+  labs(title= &#39;Tytuł wykresu&#39;, 
+       subtitle = &#39;Podtytuł wykresu&#39;, 
+       x = &#39;Tytuł osi x&#39;,
+       y = &#39;Tytuł osi y&#39;)</code></pre>
+<p><img src="/post/2017-10-04-titles_files/figure-html/unnamed-chunk-4-1.png" width="672" style="display: block; margin: auto;" /> ### Jak dodać podpis (caption) pod wykresem?</p>
+<pre class="r"><code>plot +
+  labs(caption = &#39;Tutaj podpis wykresu, np. źródło url&#39;)</code></pre>
+<p><img src="/post/2017-10-04-titles_files/figure-html/unnamed-chunk-5-1.png" width="672" style="display: block; margin: auto;" /></p>
+</div>
+</div>
+</div>
+<div id="jak-modyfikowac-czcionke-w-wykresach-wielkosc-font-wyrownanie-a-moze-chcesz-sie-ich-cakowicie-pozbyc" class="section level2">
+<h2>Jak modyfikować czcionkę w wykresach? Wielkość, font, wyrównanie? A może chcesz się ich całkowicie pozbyć?</h2>
+<div id="kliknij-tutaj" class="section level3">
+<h3>(kliknij tutaj)</h3>
+</div>
+</div>

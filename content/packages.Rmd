@@ -1,0 +1,31 @@
+---
+title: Pakiety R'owe Spis treści
+author: KW
+date: '2017-09-10'
+slug: packages
+categories: []
+tags: []
+---
+
+## Poniżej lista pakietów, które moim zdaniem każdy użytkownik R'a powinien znać:
+* dplyr
+* tidyr (transformacja danych)
+* lubridate (daty)
+* ggplot2 (wykresy)
+* readr (csv)
+* stringr (operacje na stringach)
+* devtools (ładowanie pakietów  git'a)
+* readxl (wczytywanie exceli)
+* xlsx (wczytywanie exceli)
+* openxlsx (wczytywanie exceli)
+* purrr
+* leaflet (wizualizacja na mapie)
+* shiny (aplikacje web'owe)
+* plotly (wykresy interaktywme)
+* tm (text mmining)
+* tidytext (text mining)
+* rmarkdown (tworzenie notatek)
+* httr (pobieranie zawatosci stron internetowych)
+* rvest (scrapowanie)
+* sendmailr (wysylka maili z R)
+* tibble

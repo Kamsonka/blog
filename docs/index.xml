@@ -5,10 +5,30 @@
     <link>/</link>
     <description>Recent content on PLOTy i Ploteczki</description>
     <generator>Hugo -- gohugo.io</generator>
-    <lastBuildDate>Tue, 03 Oct 2017 00:00:00 +0000</lastBuildDate>
+    <lastBuildDate>Wed, 04 Oct 2017 00:00:00 +0000</lastBuildDate>
     
 	<atom:link href="/index.xml" rel="self" type="application/rss+xml" />
     
+    
+    <item>
+      <title>Tytuły</title>
+      <link>/2017/10/04/tytu%C5%82y/</link>
+      <pubDate>Wed, 04 Oct 2017 00:00:00 +0000</pubDate>
+      
+      <guid>/2017/10/04/tytu%C5%82y/</guid>
+      <description>startujemy z ‘gołym’ wykresem library(ggplot2) x = rnorm(n = 1000, mean = 50) plot = ggplot() + geom_histogram(aes(x), bins = 50) plot Jak dodać tytuł do wykresu w ggplot? plot + ggtitle(label = &amp;#39;Tytuł wykresu&amp;#39;, subtitle = &amp;#39;Podtytuł wykresu&amp;#39;)  Jak dodać/zmienić tytuł osi x i y? plot + xlab(&amp;#39;Tytuł osi x&amp;#39;) + ylab(&amp;#39;Tytuł osi y&amp;#39;) To samo można zrobić przy zastosowaniiu jednej funkcji: plot + labs(title= &amp;#39;Tytuł wykresu&amp;#39;, subtitle = &amp;#39;Podtytuł wykresu&amp;#39;, x = &amp;#39;Tytuł osi x&amp;#39;, y = &amp;#39;Tytuł osi y&amp;#39;) ### Jak dodać podpis (caption) pod wykresem?</description>
+    </item>
+    
+    <item>
+      <title>geom_line</title>
+      <link>/2017/10/04/geom_line/</link>
+      <pubDate>Wed, 04 Oct 2017 00:00:00 +0000</pubDate>
+      
+      <guid>/2017/10/04/geom_line/</guid>
+      <description>geom_line, czyli nic innego jak wykres liniowy library(lubridate) library(ggplot2) Tworzę tabelę z danymi
+df = data.frame(day = ymd(&amp;#39;2016-01-01&amp;#39;) + 0:364, value = runif(n = 365, min = 0, max = 150 )) head(df) ## day value ## 1 2016-01-01 115.61844 ## 2 2016-01-02 31.47788 ## 3 2016-01-03 135.06906 ## 4 2016-01-04 51.77321 ## 5 2016-01-05 42.48045 ## 6 2016-01-06 55.42984 Malujemy wykres :)
+ggplot(df, aes(x = day, y = value)) + geom_line() Możemy zmienić kolor linii, wielkość oraz typ lini:</description>
+    </item>
     
     <item>
       <title>geom_bar</title>
@@ -34,21 +54,30 @@ Kolor ggplot(data = women, aes(x = height, y = weight)) + geom_point(color = &am
     </item>
     
     <item>
-      <title>O mnie</title>
+      <title>O blogu</title>
       <link>/about/</link>
       <pubDate>Sun, 10 Sep 2017 21:48:51 -0700</pubDate>
       
       <guid>/about/</guid>
-      <description></description>
+      <description>Blog poświęcony jest programowaniu w R. Głownym tematem będzie wizualizacja danych w R przy użyciu pakietu ggplot2, a być może również plotly w niedalekiej przyszłości. W tak zwanym międzyczasie postaram się wrzucać drobne analizy oraz przydatne pakiety ;)</description>
     </item>
     
     <item>
-      <title>Spis treści</title>
-      <link>/table-of-contents/</link>
+      <title>GGPLOT2 Spis treści</title>
+      <link>/ggplot2/</link>
       <pubDate>Sun, 10 Sep 2017 00:00:00 +0000</pubDate>
       
-      <guid>/table-of-contents/</guid>
-      <description>Rodzaje wykresów  geom_bar geom_boxplot geom_density geom_dotplot geom_hex geom_jitter geom_map geom_abline geom_point geom_ribbon geom_smooth geom_area geom_freqpoly geom_histogram geom_quantile geom_rug geom_col geom_violin geom_line geom_step geom_crossbar geom_errorbar geom_linerange geom_pointrange   Doprecyzowanie wykresu  stat position grupowanie po color, fill,shape, size, lietype, group grupowanie po facet_ przekształceni coord_ scale   Napisy  geom_text geom_label annotation caption   Theme  tytuł osie x i y legenda panel wykresu guides   Typowe probemy  Kolejność elementów wykresu   </description>
+      <guid>/ggplot2/</guid>
+      <description>Rodzaje wykresów  geom_bar geom_boxplot geom_density geom_dotplot geom_hex geom_jitter geom_map geom_abline geom_point geom_ribbon geom_smooth geom_area geom_freqpoly geom_histogram geom_quantile geom_rug geom_col geom_violin geom_line geom_step geom_crossbar geom_errorbar geom_linerange geom_pointrange   Doprecyzowanie wykresu  stat position grupowanie po color, fill,shape, size, linetype, group grupowanie po facet_ przekształcenie coord_ scale   Napisy  geom_text geom_label annotation tytuły i podpisy   Theme  tytuły osie x i y legenda panel wykresu guides   Typowe probemy  Kolejność elementów wykresu   </description>
+    </item>
+    
+    <item>
+      <title>Pakiety R&#39;owe Spis treści</title>
+      <link>/packages/</link>
+      <pubDate>Sun, 10 Sep 2017 00:00:00 +0000</pubDate>
+      
+      <guid>/packages/</guid>
+      <description>Poniżej lista pakietów, które moim zdaniem każdy użytkownik R’a powinien znać:  dplyr tidyr (transformacja danych) lubridate (daty) ggplot2 (wykresy) readr (csv) stringr (operacje na stringach) devtools (ładowanie pakietów git’a) readxl (wczytywanie exceli) xlsx (wczytywanie exceli) openxlsx (wczytywanie exceli) purrr leaflet (wizualizacja na mapie) shiny (aplikacje web’owe) plotly (wykresy interaktywme) tm (text mmining) tidytext (text mining) rmarkdown (tworzenie notatek) httr (pobieranie zawatosci stron internetowych) rvest (scrapowanie) sendmailr (wysylka maili z R) tibble   </description>
     </item>
     
     <item>

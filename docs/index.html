@@ -98,7 +98,13 @@
       
       
         <li class="pure-menu-item">
-          <a class="pure-menu-link" href="/table-of-contents"><i class='fa fa-bars fa-fw'></i>Spis treści</a>
+          <a class="pure-menu-link" href="/ggplot2"><i class='fa fa-bar-chart fa-fw'></i>GGPLOT2</a>
+      
+        </li>
+      
+      
+        <li class="pure-menu-item">
+          <a class="pure-menu-link" href="/packages"><i class='fa fa-puzzle-piece fa-fw'></i>Pakiety</a>
       
         </li>
       
@@ -169,6 +175,80 @@
 </div>
 
 <div class="content">
+  
+    <article>
+  <header>
+    <h2><a href="/2017/10/04/tytu%C5%82y/">Tytuły</a></h2>
+
+    <div class="post-meta">
+
+  <div>
+    <i class="fa fa-calendar fa-fw"></i>
+    <time>04 Oct 2017, 00:00</time>
+  </div>
+
+  
+
+  
+
+  
+  
+  
+  
+
+</div>
+
+  </header>
+
+  <p>
+  startujemy z ‘gołym’ wykresem library(ggplot2) x = rnorm(n = 1000, mean = 50) plot = ggplot() + geom_histogram(aes(x), bins = 50) plot Jak dodać tytuł do wykresu w ggplot? plot + ggtitle(label = &#39;Tytuł wykresu&#39;, subtitle = &#39;Podtytuł wykresu&#39;)  Jak dodać/zmienić tytuł osi x i y? plot + xlab(&#39;Tytuł osi x&#39;) + ylab(&#39;Tytuł osi y&#39;) To samo można zrobić przy zastosowaniiu jednej funkcji: plot + labs(title= &#39;Tytuł wykresu&#39;, subtitle = &#39;Podtytuł wykresu&#39;, x = &#39;Tytuł osi x&#39;, y = &#39;Tytuł osi y&#39;) ### Jak dodać podpis (caption) pod wykresem?
+  </p>
+
+  
+  <footer>
+    <a href="/2017/10/04/tytu%C5%82y/">Read more<i class="fa fa-angle-double-right fa-fw"></i></a>
+  </footer>
+  
+</article>
+
+  
+    <article>
+  <header>
+    <h2><a href="/2017/10/04/geom_line/">geom_line</a></h2>
+
+    <div class="post-meta">
+
+  <div>
+    <i class="fa fa-calendar fa-fw"></i>
+    <time>04 Oct 2017, 00:00</time>
+  </div>
+
+  
+
+  
+
+  
+  
+  
+  
+
+</div>
+
+  </header>
+
+  <p>
+  geom_line, czyli nic innego jak wykres liniowy library(lubridate) library(ggplot2) Tworzę tabelę z danymi
+df = data.frame(day = ymd(&#39;2016-01-01&#39;) + 0:364, value = runif(n = 365, min = 0, max = 150 )) head(df) ## day value ## 1 2016-01-01 115.61844 ## 2 2016-01-02 31.47788 ## 3 2016-01-03 135.06906 ## 4 2016-01-04 51.77321 ## 5 2016-01-05 42.48045 ## 6 2016-01-06 55.42984 Malujemy wykres :)
+ggplot(df, aes(x = day, y = value)) + geom_line() Możemy zmienić kolor linii, wielkość oraz typ lini:
+  </p>
+
+  
+  <footer>
+    <a href="/2017/10/04/geom_line/">Read more<i class="fa fa-angle-double-right fa-fw"></i></a>
+  </footer>
+  
+</article>
+
   
     <article>
   <header>
