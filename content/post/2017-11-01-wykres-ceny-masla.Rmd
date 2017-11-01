@@ -2,14 +2,14 @@
 title: Wykres ceny masła
 author: KW
 date: '2017-11-01'
-slug: wykres-ceny-masła
 categories:
-  - R
   - Analizy
-tags:
   - R
+tags:
   - analiza
   - gus
+  - R
+slug: wykres-ceny-masla
 ---
 
 Dane można pozyskać ze strony: https://bdl.stat.gov.pl/BDL/start
@@ -50,7 +50,7 @@ plot1 = ceny.masla %>% ggplot(aes(x = data, y = Wartosc))+
 print(plot1)
 ```
 
-A teraz pora podrasować wykres:
+A teraz pora podrasować wykres.
 
 ```{r warning=FALSE, message=FALSE, fig.align='center'}
 library(ggthemes)
@@ -74,3 +74,4 @@ plot2 = plot1 +
 print(plot2)
 ```
 
+Wszystkie motywy ggthemes można podejrzeć tutaj: http://www.ggplot2-exts.org/ggthemes.html

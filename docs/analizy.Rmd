@@ -7,5 +7,5 @@ categories: []
 tags: []
 ---
 
-- [wykres cen masła w Polsce w latach 2006-2017](ttp://plotyploteczki.pl/2017/11/01/wykres-ceny-masla)
+- [wykres cen masła w Polsce w latach 2006-2017](http://plotyploteczki.pl/2017/11/01/wykres-ceny-masla/)
 - więcej wkrótce

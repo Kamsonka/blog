@@ -192,11 +192,11 @@
   <div>
     <i class="fa fa-tags fa-fw"></i>
     
-      <a class="post-taxonomy-tag" href="/tags/r">R</a>&nbsp;&#47;
-    
       <a class="post-taxonomy-tag" href="/tags/analiza">analiza</a>&nbsp;&#47;
     
-      <a class="post-taxonomy-tag" href="/tags/gus">gus</a>
+      <a class="post-taxonomy-tag" href="/tags/gus">gus</a>&nbsp;&#47;
+    
+      <a class="post-taxonomy-tag" href="/tags/r">R</a>
     
   </div>
   
@@ -242,8 +242,8 @@ plot1 = ceny.masla %&gt;% ggplot(aes(x = data, y = Wartosc))+
   geom_line(color = &#39;#4678AA&#39;, size = 2) 
 
 print(plot1)</code></pre>
-<p><img src="2017-11-01-wykres-ceny-mas%C5%82a_files/figure-html/unnamed-chunk-4-1.png" width="672" style="display: block; margin: auto;" /></p>
-<p>A teraz pora podrasować wykres:</p>
+<p><img src="/post/2017-11-01-wykres-ceny-masla_files/figure-html/unnamed-chunk-4-1.png" width="672" style="display: block; margin: auto;" /></p>
+<p>A teraz pora podrasować wykres.</p>
 <pre class="r"><code>library(ggthemes)
 plot2 = plot1 +
   # wymuszam, by każdy rok się pojawił na osi w formacie &#39;yyyy&#39;
@@ -263,7 +263,8 @@ plot2 = plot1 +
   theme(plot.title = element_text(hjust = 0.5, size = 16))
 
 print(plot2)</code></pre>
-<p><img src="2017-11-01-wykres-ceny-mas%C5%82a_files/figure-html/unnamed-chunk-5-1.png" width="672" style="display: block; margin: auto;" /></p>
+<p><img src="/post/2017-11-01-wykres-ceny-masla_files/figure-html/unnamed-chunk-5-1.png" width="672" style="display: block; margin: auto;" /></p>
+<p>Wszystkie motywy ggthemes można podejrzeć tutaj: <a href="http://www.ggplot2-exts.org/ggthemes.html" class="uri">http://www.ggplot2-exts.org/ggthemes.html</a></p>
 
 
   
