@@ -3,6 +3,11 @@
   xmlns:xhtml="http://www.w3.org/1999/xhtml">
   
   <url>
+    <loc>/2017/11/01/wykres-ceny-mas%C5%82a/</loc>
+    <lastmod>2017-11-01T00:00:00+00:00</lastmod>
+  </url>
+  
+  <url>
     <loc>/2017/10/04/tytu%C5%82y/</loc>
     <lastmod>2017-10-04T00:00:00+00:00</lastmod>
   </url>
@@ -33,6 +38,11 @@
   </url>
   
   <url>
+    <loc>/analizy/</loc>
+    <lastmod>2017-09-10T00:00:00+00:00</lastmod>
+  </url>
+  
+  <url>
     <loc>/packages/</loc>
     <lastmod>2017-09-10T00:00:00+00:00</lastmod>
   </url>
@@ -43,6 +53,18 @@
   </url>
   
   <url>
+    <loc>/tags/analiza/</loc>
+    <lastmod>2017-11-01T00:00:00+00:00</lastmod>
+    <priority>0</priority>
+  </url>
+  
+  <url>
+    <loc>/tags/gus/</loc>
+    <lastmod>2017-11-01T00:00:00+00:00</lastmod>
+    <priority>0</priority>
+  </url>
+  
+  <url>
     <loc>/tags/link/</loc>
     <lastmod>2017-09-10T00:00:00+00:00</lastmod>
     <priority>0</priority>
@@ -50,7 +72,7 @@
   
   <url>
     <loc>/</loc>
-    <lastmod>2017-10-04T00:00:00+00:00</lastmod>
+    <lastmod>2017-11-01T00:00:00+00:00</lastmod>
     <priority>0</priority>
   </url>
   
@@ -62,13 +84,19 @@
   
   <url>
     <loc>/post/</loc>
-    <lastmod>2017-10-04T00:00:00+00:00</lastmod>
+    <lastmod>2017-11-01T00:00:00+00:00</lastmod>
+    <priority>0</priority>
+  </url>
+  
+  <url>
+    <loc>/tags/r/</loc>
+    <lastmod>2017-11-01T00:00:00+00:00</lastmod>
     <priority>0</priority>
   </url>
   
   <url>
     <loc>/tags/</loc>
-    <lastmod>2017-09-10T00:00:00+00:00</lastmod>
+    <lastmod>2017-11-01T00:00:00+00:00</lastmod>
     <priority>0</priority>
   </url>
   

@@ -5,7 +5,7 @@
   <meta http-equiv="content-type" content="text/html; charset=utf-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <meta name="description" content="">
-  <meta name="generator" content="Hugo 0.26" />
+  <meta name="generator" content="Hugo 0.30.2" />
 
   <title>PLOTy i Ploteczki</title>
 
@@ -98,6 +98,12 @@
       
       
         <li class="pure-menu-item">
+          <a class="pure-menu-link" href="/analizy"><i class='fa fa-bar-chart fa-fw'></i>Analizy</a>
+      
+        </li>
+      
+      
+        <li class="pure-menu-item">
           <a class="pure-menu-link" href="/ggplot2"><i class='fa fa-bar-chart fa-fw'></i>GGPLOT2</a>
       
         </li>
@@ -175,6 +181,55 @@
 </div>
 
 <div class="content">
+  
+    <article>
+  <header>
+    <h2><a href="/2017/11/01/wykres-ceny-mas%C5%82a/">Wykres ceny masła</a></h2>
+
+    <div class="post-meta">
+
+  <div>
+    <i class="fa fa-calendar fa-fw"></i>
+    <time>01 Nov 2017, 00:00</time>
+  </div>
+
+  
+
+  
+
+  
+  
+  
+  <div>
+    <i class="fa fa-tags fa-fw"></i>
+    
+      <a class="post-taxonomy-tag" href="/tags/r">R</a>&nbsp;&#47;
+    
+      <a class="post-taxonomy-tag" href="/tags/analiza">analiza</a>&nbsp;&#47;
+    
+      <a class="post-taxonomy-tag" href="/tags/gus">gus</a>
+    
+  </div>
+  
+  
+
+</div>
+
+  </header>
+
+  <p>
+  Dane można pozyskać ze strony: https://bdl.stat.gov.pl/BDL/start Ja wybrałam ceny masła po miesiącach w latach 2006 - 2017
+Wczytuję pobrane dane funkcją read_csv2() z pakietu readr. U mnie wyglądają one tak:
+library(dplyr) head(as.data.frame(ceny.masla)) ## Kod Nazwa Miesiące ## 1 0000000 POLSKA styczeń ## 2 0000000 POLSKA styczeń ## 3 0000000 POLSKA styczeń ## 4 0000000 POLSKA styczeń ## 5 0000000 POLSKA styczeń ## 6 0000000 POLSKA styczeń ## Rodzaje towarów i usług Cena i wskaźniki ## 1 masło świeże o zawartości tłuszczu ok.
+  </p>
+
+  
+  <footer>
+    <a href="/2017/11/01/wykres-ceny-mas%C5%82a/">Read more<i class="fa fa-angle-double-right fa-fw"></i></a>
+  </footer>
+  
+</article>
+
   
     <article>
   <header>

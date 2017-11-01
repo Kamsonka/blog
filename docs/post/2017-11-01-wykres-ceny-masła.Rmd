@@ -1,0 +1,76 @@
+---
+title: Wykres ceny masła
+author: KW
+date: '2017-11-01'
+slug: wykres-ceny-masła
+categories:
+  - R
+  - Analizy
+tags:
+  - R
+  - analiza
+  - gus
+---
+
+Dane można pozyskać ze strony: https://bdl.stat.gov.pl/BDL/start
+Ja wybrałam ceny masła po miesiącach w latach 2006 - 2017
+
+```{r echo=FALSE, warning=FALSE, message=FALSE}
+ceny = readr::read_csv2('/home/kamila/Pobrane/CENY_2917_CREL_20171101181257.csv')
+library(dplyr)
+ceny.masla = ceny %>% filter(Nazwa == 'POLSKA',
+                       grepl(x = `Rodzaje towarów i usług`, pattern = 'masło'))
+
+```
+
+Wczytuję pobrane dane funkcją read_csv2() z pakietu readr. U mnie wyglądają one tak:
+
+```{r warning=FALSE, message=FALSE}
+library(dplyr)
+head(as.data.frame(ceny.masla))
+```
+
+Korzystając z tego, że w tabela jest posortowana po miesiącach (styczeń - grudzień) zamieniam miesiące na faktor, dzięki czemu zamienie napis na liczbę i stworzę później datę.
+```{r warning=FALSE, message=FALSE}
+# zamiana na factor
+ceny.masla$Miesiące = factor(ceny.masla$Miesiące, levels= unique(ceny.masla$Miesiące), ordered = T)
+# Tworzę nową kolumnę 'data' o formacie 'yyyy-mm-dd'
+library(lubridate)
+ceny.masla$data = ymd(paste0(ceny.masla$Rok,'-', as.numeric(ceny.masla$Miesiące),'-01'))
+```
+
+Tyle z obróbki danych:
+
+```{r warning=FALSE, message=FALSE, fig.align='center'}
+library(ggplot2)
+
+plot1 = ceny.masla %>% ggplot(aes(x = data, y = Wartosc))+
+  geom_line(color = '#4678AA', size = 2) 
+
+print(plot1)
+```
+
+A teraz pora podrasować wykres:
+
+```{r warning=FALSE, message=FALSE, fig.align='center'}
+library(ggthemes)
+plot2 = plot1 +
+  # wymuszam, by każdy rok się pojawił na osi w formacie 'yyyy'
+  scale_x_date(date_breaks = 'years', date_labels = '%Y')+
+  # poszerzam skalę osi Y (cen) oraz nadaję odpowiednie labelsy
+  scale_y_continuous(breaks = 0:7, 
+                     limits = c(0,7), 
+                     labels = c('0.00zł', '1.00zł', '2.00zł', '3.00zł', '4.00zł', '5.00zł', '6.00zł', '7.00zł'))+
+  # Dodaję tytuły osi i wykresu
+  xlab('Rok')+
+  ylab('Cena w PLN')+
+  labs(title = 'Ceny masła* w latach 2006 - 2017',
+       caption = paste0('*',unique(ceny.masla$`Rodzaje towarów i usług`))) +
+  # stosuję theme z pakietu ggthemes
+  theme_minimal()+
+  # zmieniam połozenie tytułu na środu i powiększam tekst
+  theme(plot.title = element_text(hjust = 0.5, size = 16))
+
+print(plot2)
+```
+

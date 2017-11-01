@@ -5,10 +5,21 @@
     <link>/</link>
     <description>Recent content on PLOTy i Ploteczki</description>
     <generator>Hugo -- gohugo.io</generator>
-    <lastBuildDate>Wed, 04 Oct 2017 00:00:00 +0000</lastBuildDate>
+    <lastBuildDate>Wed, 01 Nov 2017 00:00:00 +0000</lastBuildDate>
     
 	<atom:link href="/index.xml" rel="self" type="application/rss+xml" />
     
+    
+    <item>
+      <title>Wykres ceny masła</title>
+      <link>/2017/11/01/wykres-ceny-mas%C5%82a/</link>
+      <pubDate>Wed, 01 Nov 2017 00:00:00 +0000</pubDate>
+      
+      <guid>/2017/11/01/wykres-ceny-mas%C5%82a/</guid>
+      <description>Dane można pozyskać ze strony: https://bdl.stat.gov.pl/BDL/start Ja wybrałam ceny masła po miesiącach w latach 2006 - 2017
+Wczytuję pobrane dane funkcją read_csv2() z pakietu readr. U mnie wyglądają one tak:
+library(dplyr) head(as.data.frame(ceny.masla)) ## Kod Nazwa Miesiące ## 1 0000000 POLSKA styczeń ## 2 0000000 POLSKA styczeń ## 3 0000000 POLSKA styczeń ## 4 0000000 POLSKA styczeń ## 5 0000000 POLSKA styczeń ## 6 0000000 POLSKA styczeń ## Rodzaje towarów i usług Cena i wskaźniki ## 1 masło świeże o zawartości tłuszczu ok.</description>
+    </item>
     
     <item>
       <title>Tytuły</title>
@@ -69,6 +80,15 @@ Kolor ggplot(data = women, aes(x = height, y = weight)) + geom_point(color = &am
       
       <guid>/ggplot2/</guid>
       <description>Rodzaje wykresów  geom_bar geom_boxplot geom_density geom_dotplot geom_hex geom_jitter geom_map geom_abline geom_point geom_ribbon geom_smooth geom_area geom_freqpoly geom_histogram geom_quantile geom_rug geom_col geom_violin geom_line geom_step geom_crossbar geom_errorbar geom_linerange geom_pointrange   Doprecyzowanie wykresu  stat position grupowanie po color, fill,shape, size, linetype, group grupowanie po facet_ przekształcenie coord_ scale   Napisy  geom_text geom_label annotation tytuły i podpisy   Theme  tytuły osie x i y legenda panel wykresu guides   Typowe probemy  Kolejność elementów wykresu   </description>
+    </item>
+    
+    <item>
+      <title>Moje analizy</title>
+      <link>/analizy/</link>
+      <pubDate>Sun, 10 Sep 2017 00:00:00 +0000</pubDate>
+      
+      <guid>/analizy/</guid>
+      <description> wykres cen masła w Polsce w latach 2006-2017 więcej wkrótce  </description>
     </item>
     
     <item>

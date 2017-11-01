@@ -1,0 +1,11 @@
+---
+title: Moje analizy
+author: KW
+date: '2017-09-10'
+slug: analizy
+categories: []
+tags: []
+---
+
+- [wykres cen masła w Polsce w latach 2006-2017](ttp://plotyploteczki.pl/2017/11/01/wykres-ceny-masla)
+- więcej wkrótce

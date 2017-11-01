@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes" ?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>Gus on PLOTy i Ploteczki</title>
+    <link>/tags/gus/</link>
+    <description>Recent content in Gus on PLOTy i Ploteczki</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <lastBuildDate>Wed, 01 Nov 2017 00:00:00 +0000</lastBuildDate>
+    
+	<atom:link href="/tags/gus/index.xml" rel="self" type="application/rss+xml" />
+    
+    
+    <item>
+      <title>Wykres ceny masła</title>
+      <link>/2017/11/01/wykres-ceny-mas%C5%82a/</link>
+      <pubDate>Wed, 01 Nov 2017 00:00:00 +0000</pubDate>
+      
+      <guid>/2017/11/01/wykres-ceny-mas%C5%82a/</guid>
+      <description>Dane można pozyskać ze strony: https://bdl.stat.gov.pl/BDL/start Ja wybrałam ceny masła po miesiącach w latach 2006 - 2017
+Wczytuję pobrane dane funkcją read_csv2() z pakietu readr. U mnie wyglądają one tak:
+library(dplyr) head(as.data.frame(ceny.masla)) ## Kod Nazwa Miesiące ## 1 0000000 POLSKA styczeń ## 2 0000000 POLSKA styczeń ## 3 0000000 POLSKA styczeń ## 4 0000000 POLSKA styczeń ## 5 0000000 POLSKA styczeń ## 6 0000000 POLSKA styczeń ## Rodzaje towarów i usług Cena i wskaźniki ## 1 masło świeże o zawartości tłuszczu ok.</description>
+    </item>
+    
+  </channel>
+</rss>
