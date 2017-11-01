@@ -10,6 +10,7 @@ tags:
   - gus
   - R
 slug: wykres-ceny-masla
+description: "Rekordowe ceny masła od 11 lat! "
 ---
 
 Dane można pozyskać ze strony: https://bdl.stat.gov.pl/BDL/start

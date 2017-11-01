@@ -218,9 +218,11 @@
   </header>
 
   <p>
-  Dane można pozyskać ze strony: https://bdl.stat.gov.pl/BDL/start Ja wybrałam ceny masła po miesiącach w latach 2006 - 2017
-Wczytuję pobrane dane funkcją read_csv2() z pakietu readr. U mnie wyglądają one tak:
-library(dplyr) head(as.data.frame(ceny.masla)) ## Kod Nazwa Miesiące ## 1 0000000 POLSKA styczeń ## 2 0000000 POLSKA styczeń ## 3 0000000 POLSKA styczeń ## 4 0000000 POLSKA styczeń ## 5 0000000 POLSKA styczeń ## 6 0000000 POLSKA styczeń ## Rodzaje towarów i usług Cena i wskaźniki ## 1 masło świeże o zawartości tłuszczu ok.
+
+  Rekordowe ceny masła od 11 lat! 
+
+
+
   </p>
 
   
@@ -233,7 +235,7 @@ library(dplyr) head(as.data.frame(ceny.masla)) ## Kod Nazwa Miesiące ## 1 00000
   
     <article>
   <header>
-    <h2><a href="/2017/10/04/tytu%C5%82y/">Tytuły</a></h2>
+    <h2><a href="/2017/10/04/tytu%C5%82y-osi-i-wykresu/">Tytuły osi i wykresu</a></h2>
 
     <div class="post-meta">
 
@@ -256,12 +258,16 @@ library(dplyr) head(as.data.frame(ceny.masla)) ## Kod Nazwa Miesiące ## 1 00000
   </header>
 
   <p>
-  startujemy z ‘gołym’ wykresem library(ggplot2) x = rnorm(n = 1000, mean = 50) plot = ggplot() + geom_histogram(aes(x), bins = 50) plot Jak dodać tytuł do wykresu w ggplot? plot + ggtitle(label = &#39;Tytuł wykresu&#39;, subtitle = &#39;Podtytuł wykresu&#39;)  Jak dodać/zmienić tytuł osi x i y? plot + xlab(&#39;Tytuł osi x&#39;) + ylab(&#39;Tytuł osi y&#39;) To samo można zrobić przy zastosowaniiu jednej funkcji: plot + labs(title= &#39;Tytuł wykresu&#39;, subtitle = &#39;Podtytuł wykresu&#39;, x = &#39;Tytuł osi x&#39;, y = &#39;Tytuł osi y&#39;) ### Jak dodać podpis (caption) pod wykresem?
+
+  Jak nadać tytuły osi i wykresu?
+
+
+
   </p>
 
   
   <footer>
-    <a href="/2017/10/04/tytu%C5%82y/">Read more<i class="fa fa-angle-double-right fa-fw"></i></a>
+    <a href="/2017/10/04/tytu%C5%82y-osi-i-wykresu/">Read more<i class="fa fa-angle-double-right fa-fw"></i></a>
   </footer>
   
 </article>
@@ -292,9 +298,11 @@ library(dplyr) head(as.data.frame(ceny.masla)) ## Kod Nazwa Miesiące ## 1 00000
   </header>
 
   <p>
-  geom_line, czyli nic innego jak wykres liniowy library(lubridate) library(ggplot2) Tworzę tabelę z danymi
-df = data.frame(day = ymd(&#39;2016-01-01&#39;) + 0:364, value = runif(n = 365, min = 0, max = 150 )) head(df) ## day value ## 1 2016-01-01 115.61844 ## 2 2016-01-02 31.47788 ## 3 2016-01-03 135.06906 ## 4 2016-01-04 51.77321 ## 5 2016-01-05 42.48045 ## 6 2016-01-06 55.42984 Malujemy wykres :)
-ggplot(df, aes(x = day, y = value)) + geom_line() Możemy zmienić kolor linii, wielkość oraz typ lini:
+
+  Jak stworzyć wykres liniowy w ggplot?
+
+
+
   </p>
 
   
@@ -330,9 +338,11 @@ ggplot(df, aes(x = day, y = value)) + geom_line() Możemy zmienić kolor linii, 
   </header>
 
   <p>
-  Hej! Zanim rozpoczniemy przygodę z ggplot potrzebujemy wczytac bilbioteki i dane na których będziemy pracować.
-library(ggplot2) library(datasets) Z pakietu datasets wybieram dane ‘women’ pokazujące wysokość i wagę kobiet w wieku 30-39 lat.
-datasets::women ## height weight ## 1 58 115 ## 2 59 117 ## 3 60 120 ## 4 61 123 ## 5 62 126 ## 6 63 129 ## 7 64 132 ## 8 65 135 ## 9 66 139 ## 10 67 142 ## 11 68 146 ## 12 69 150 ## 13 70 154 ## 14 71 159 ## 15 72 164 Pierwszy wykres!
+
+  Jak stworzyć wykres słupkowy w ggplot?
+
+
+
   </p>
 
   
@@ -368,10 +378,11 @@ datasets::women ## height weight ## 1 58 115 ## 2 59 117 ## 3 60 120 ## 4 61 123
   </header>
 
   <p>
-  Wykres punktowy jest jeszcze prostszy od wykresu słupkowego.
-library(ggplot2) library(datasets) Początek jest zawsze ten sam: ggplot() Funkcja która rysuje kropki na wykresie to geom_point()
-ggplot(data = women, aes(x = height, y = weight)) + geom_point() Dodatkowymi argumentami geom_point mogą być: kształt, kolor, wielkość.
-Kolor ggplot(data = women, aes(x = height, y = weight)) + geom_point(color = &#39;#0099CC&#39;)  Rodzaje punktorów i wielkość ggplot(data = women, aes(x = height, y = weight)) + geom_point(shape = 17, color = &#39;#0099CC&#39;, size = 4)  
+
+  Jak stworzyć wykres punktowy w ggplot?
+
+
+
   </p>
 
   

@@ -6,6 +6,7 @@ slug: geom-line
 categories: []
 tags: []
 output: html_document
+description: 'Jak stworzyć wykres liniowy w ggplot?'
 ---
 
 ## geom_line, czyli nic innego jak wykres liniowy

@@ -4,7 +4,7 @@
 <head>
   <meta http-equiv="content-type" content="text/html; charset=utf-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <meta name="description" content="">
+  <meta name="description" content="Jak stworzyć wykres liniowy w ggplot?">
   <meta name="generator" content="Hugo 0.30.2" />
 
   <title>geom_line &middot; PLOTy i Ploteczki</title>
@@ -171,7 +171,7 @@
 
 <div class="header">
   <h1>geom_line</h1>
-  <h2></h2>
+  <h2>Jak stworzyć wykres liniowy w ggplot?</h2>
 </div>
 <div class="content">
 
@@ -201,13 +201,13 @@ library(ggplot2)</code></pre>
 <pre class="r"><code>df = data.frame(day = ymd(&#39;2016-01-01&#39;) + 0:364,
                 value = runif(n = 365, min = 0, max = 150 ))
 head(df)</code></pre>
-<pre><code>##          day     value
-## 1 2016-01-01 115.61844
-## 2 2016-01-02  31.47788
-## 3 2016-01-03 135.06906
-## 4 2016-01-04  51.77321
-## 5 2016-01-05  42.48045
-## 6 2016-01-06  55.42984</code></pre>
+<pre><code>##          day      value
+## 1 2016-01-01 149.574908
+## 2 2016-01-02   1.329964
+## 3 2016-01-03  25.228415
+## 4 2016-01-04  27.680103
+## 5 2016-01-05 140.042718
+## 6 2016-01-06 113.048283</code></pre>
 <p>Malujemy wykres :)</p>
 <pre class="r"><code>ggplot(df, aes(x = day, y = value)) +
   geom_line()</code></pre>
@@ -243,13 +243,13 @@ head(df)</code></pre>
   <div class="pure-u-10-24">
     
     <nav class="next">
-      <a href="/2017/10/04/tytu%C5%82y/">Tytuły</a>
+      <a href="/2017/10/04/tytu%C5%82y-osi-i-wykresu/">Tytuły osi i wykresu</a>
     </nav>
     
   </div>
   <div class="pure-u-1-24" style="text-align: right;">
     
-    <a href="/2017/10/04/tytu%C5%82y/"><i class="fa fa-chevron-right"></i></a>
+    <a href="/2017/10/04/tytu%C5%82y-osi-i-wykresu/"><i class="fa fa-chevron-right"></i></a>
     
   </div>
 </div>

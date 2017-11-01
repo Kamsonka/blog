@@ -6,6 +6,7 @@ slug: geom-point
 categories: []
 tags: []
 output: html_document
+description: 'Jak stworzyć wykres punktowy w ggplot?'
 ---
 
 Wykres punktowy jest jeszcze prostszy od wykresu słupkowego.

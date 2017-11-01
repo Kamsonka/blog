@@ -6,6 +6,7 @@ output: html_document
 slug: geom-bar
 tags: []
 categories: []
+description: 'Jak stworzyć wykres słupkowy w ggplot?'
 ---
 
 Hej! Zanim rozpoczniemy przygodę z ggplot potrzebujemy wczytac bilbioteki i dane na których będziemy pracować.

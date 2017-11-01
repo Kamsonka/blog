@@ -22,11 +22,11 @@ library(dplyr) head(as.data.frame(ceny.masla)) ## Kod Nazwa Miesiące ## 1 00000
     </item>
     
     <item>
-      <title>Tytuły</title>
-      <link>/2017/10/04/tytu%C5%82y/</link>
+      <title>Tytuły osi i wykresu</title>
+      <link>/2017/10/04/tytu%C5%82y-osi-i-wykresu/</link>
       <pubDate>Wed, 04 Oct 2017 00:00:00 +0000</pubDate>
       
-      <guid>/2017/10/04/tytu%C5%82y/</guid>
+      <guid>/2017/10/04/tytu%C5%82y-osi-i-wykresu/</guid>
       <description>startujemy z ‘gołym’ wykresem library(ggplot2) x = rnorm(n = 1000, mean = 50) plot = ggplot() + geom_histogram(aes(x), bins = 50) plot Jak dodać tytuł do wykresu w ggplot? plot + ggtitle(label = &amp;#39;Tytuł wykresu&amp;#39;, subtitle = &amp;#39;Podtytuł wykresu&amp;#39;)  Jak dodać/zmienić tytuł osi x i y? plot + xlab(&amp;#39;Tytuł osi x&amp;#39;) + ylab(&amp;#39;Tytuł osi y&amp;#39;) To samo można zrobić przy zastosowaniiu jednej funkcji: plot + labs(title= &amp;#39;Tytuł wykresu&amp;#39;, subtitle = &amp;#39;Podtytuł wykresu&amp;#39;, x = &amp;#39;Tytuł osi x&amp;#39;, y = &amp;#39;Tytuł osi y&amp;#39;) ### Jak dodać podpis (caption) pod wykresem?</description>
     </item>
     
@@ -37,7 +37,7 @@ library(dplyr) head(as.data.frame(ceny.masla)) ## Kod Nazwa Miesiące ## 1 00000
       
       <guid>/2017/10/04/geom_line/</guid>
       <description>geom_line, czyli nic innego jak wykres liniowy library(lubridate) library(ggplot2) Tworzę tabelę z danymi
-df = data.frame(day = ymd(&amp;#39;2016-01-01&amp;#39;) + 0:364, value = runif(n = 365, min = 0, max = 150 )) head(df) ## day value ## 1 2016-01-01 115.61844 ## 2 2016-01-02 31.47788 ## 3 2016-01-03 135.06906 ## 4 2016-01-04 51.77321 ## 5 2016-01-05 42.48045 ## 6 2016-01-06 55.42984 Malujemy wykres :)
+df = data.frame(day = ymd(&amp;#39;2016-01-01&amp;#39;) + 0:364, value = runif(n = 365, min = 0, max = 150 )) head(df) ## day value ## 1 2016-01-01 149.574908 ## 2 2016-01-02 1.329964 ## 3 2016-01-03 25.228415 ## 4 2016-01-04 27.680103 ## 5 2016-01-05 140.042718 ## 6 2016-01-06 113.048283 Malujemy wykres :)
 ggplot(df, aes(x = day, y = value)) + geom_line() Możemy zmienić kolor linii, wielkość oraz typ lini:</description>
     </item>
     

@@ -1,10 +1,11 @@
 ---
-title: Tytuły
+title: Tytuły osi i wykresu
 author: KW
 date: '2017-10-04'
 slug: titles
 categories: []
 tags: []
+description: 'Jak nadać tytuły osi i wykresu?'
 ---
 
 ## startujemy z 'gołym' wykresem
